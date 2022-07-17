@@ -27,16 +27,15 @@ img:hover{
     color: black;
     font-family: 'Courier New', Courier, monospace;
 }
+
 .mac2{
     margin-top: 40px;
     margin-bottom: 100px;
 }
-.mac{
-    width: 800px;
-    height: 400px;
-   
-    
-
+.applewatch{
+	margin-top: 100px;
+	font-size: 70px;
+	
 }
 .mac4{
     width: fit-content;
@@ -44,51 +43,81 @@ img:hover{
     border-radius: 50px;
     
 }
+.watch{
+	margin-top: 30px;
+	display: flex;
+}
+.watchpara{
+	margin-top: 200px;
+	font-size: 20px;
+	width: 30%;
+	margin-left: 150px;
+}
+.iphone{
+	margin-top: 30px;
+	width: 60%;
+	border-radius: 50px;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+.iphoneflex{
+	display: flex;
+}
+.iphonetext{
+	margin: auto;
+	margin-right: 150px;
+	
+}
+.processor{
+	margin-top: 40px;
+	background-image: url('mac4.png');
+	margin-bottom: 20px;
+	
+}
+.processor2{
+	display:flex;
+}
+.processortext{
+	display: flex;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	
+	
+}
+.chiptext1{
+	width: 50%;
+}
+.chiptext2{
+	width: 50%;
+	margin-bottom: 40px;
+}
+.applechip{
+	
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	width: 200px;
+	
 
-#services{
-	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
-	background-size: cover;
-	background-position: center;
-	color: #efefef !important;
-	background-attachment: fixed;
-	padding-top: 50px;
+}
+.processor p{
+	color: white;
+}
+.aboutus{
+	text-align: start;
+	margin-right: auto;
+	background-color: aliceblue;
+	margin-bottom: 100px;
 	padding-bottom: 50px;
 }
-#services h1
-{
+.aboutus1{
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
-	color: #efefef !important;
-	padding-bottom: 10px;
-
-}
-#services h1::after
-{
-	content: '';
-	background: #efefef;
-	display: block;
-	height: 3px;
-	width: 170px;
-	margin: 20px auto 5px;
-}
-.services{
-	margin-top: 40px;
-}
-.icon{
-	font-size: 40px;
-	margin: 20px auto;
-	padding: 10px;
-	height: 80px;
-	width: 80px;
-	border: 2px solid #fff;
-	border-radius: 50%;
-}
-#services p{
-	font-size: 14px;
-	margin-top: 20px;
-	color: #ccc;
-}
-.services .col-md-3:hover{
-	background: #dc3545;
-	cursor: pointer;
-	transition: 0.7s;
+	
 }
