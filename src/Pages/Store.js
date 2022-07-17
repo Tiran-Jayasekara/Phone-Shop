@@ -34,43 +34,99 @@ import a3 from '../images/airpods/a3.jpg';
 import a4 from '../images/airpods/a4.jpg';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
+import { styled } from '@mui/material/styles';
+import FormGroup from '@mui/material/FormGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import Switch, { SwitchProps } from '@mui/material/Switch';
 
 const Store=()=>{
+    const IOSSwitch = styled((props) => (
+        console.log("on"),
+        <Switch focusVisibleClassName=".Mui-focusVisible" disableRipple {...props} />
+      ))(({ theme }) => ({
+        width: 42,
+        height: 26,
+        padding: 0,
+        '& .MuiSwitch-switchBase': {
+          padding: 0,
+          margin: 2,
+          transitionDuration: '300ms',
+          '&.Mui-checked': {
+            transform: 'translateX(16px)',
+            color: '#fff',
+            '& + .MuiSwitch-track': {
+              backgroundColor: theme.palette.mode === 'dark' ? '#2ECA45' : '#65C466',
+              opacity: 1,
+              border: 0,
+            },
+            '&.Mui-disabled + .MuiSwitch-track': {
+              opacity: 0.5,
+            },
+          },
+          '&.Mui-focusVisible .MuiSwitch-thumb': {
+            color: '#33cf4d',
+            border: '6px solid #fff',
+          },
+          '&.Mui-disabled .MuiSwitch-thumb': {
+            color:
+              theme.palette.mode === 'light'
+                ? theme.palette.grey[100]
+                : theme.palette.grey[600],
+          },
+          '&.Mui-disabled + .MuiSwitch-track': {
+            opacity: theme.palette.mode === 'light' ? 0.7 : 0.3,
+          },
+        },
+        '& .MuiSwitch-thumb': {
+          boxSizing: 'border-box',
+          width: 22,
+          height: 22,
+        },
+        '& .MuiSwitch-track': {
+          borderRadius: 26 / 2,
+          backgroundColor: theme.palette.mode === 'light' ? '#E9E9EA' : '#39393D',
+          opacity: 1,
+          transition: theme.transitions.create(['background-color'], {
+            duration: 500,
+            
+          }),
+        },
+      }));
+      
+
+
     return(
         <div className="App">
-        <h1 className="HeaderStore">Apple Watch</h1>
-		<div className="storeimage">
+        <h1 className="storeheader1"><h2>Store.</h2>The best way to buy the<br></br> products you love.</h1>
+		<div className="">
             <div className="storeimages">
             <div className="imageborder"><a href="/watch" ><img src={w1} alt="picture" className="macbook"/></a></div>
-            <div className="imageborder"><a href="/watch" className="macbook"><img src={w5} alt="picture" className="macbook"/></a></div>
-            <div className="imageborder"><a href="/watch" className="macbook"><img src={w4} alt="picture" className="macbook"/></a></div>
+            <h1 className="storeheader"><h2>Apple Watch</h2>Over 50% more screen area than Series 3.<br></br> products you love.<FormGroup className="watchswich">
+            <FormControlLabel
+            control={<IOSSwitch sx={{ m: 1 }}/>}
+            label="Series"
+            />
+            </FormGroup></h1>
             </div>
 
-            <h1 className="HeaderStore">MacBook</h1>
             <div className="storeimages">
-            <div className="imageborder"><a href="/mac" className="macbook"><img src={m1} alt="picture" className="macbook"/></a></div>
+            <h1 className="storeheader2"><h2>Mac Book</h2>Save on Mac with an education discount<br></br>Plus get a $150 gift card.◊◊</h1>
             <div className="imageborder"><a href="/mac"  className="macbook"><img src={m2} alt="picture" className="macbook"/></a></div>
-            <div className="imageborder"><a href="/mac" className="macbook"><img src={m3} alt="picture" className="macbook"/></a></div>
             </div>
 
-            <h1 className="HeaderStore">AirPods/HeadPhones</h1>
             <div className="storeimages">
-            <div className="imageborder"><a href="/airpods" className="macbook"><img src={a1} alt="picture" className="macbook"/></a></div>
-            <div className="imageborder"><a href="/airpods" className="macbook"><img src={a2} alt="picture" className="macbook"/></a></div>
-            <div className="imageborder"><a href="/airpods" className="macbook"><img src={a3} alt="picture" className="macbook"/></a></div>
+            <div className="imageborder"><a href="/watch" ><img src={a3} alt="picture" className="macbook"/></a></div>
+            <h1 className="storeheader"><h2>AirPods</h2>AirPods2nd generation$129<br></br> <br></br>A magical connection to your devices.</h1>
             </div>
 
-            <h1 className="HeaderStore">iPhone</h1>
             <div className="storeimages">
-            <div className="imageborder"><a href="/iphone" className="macbook"><img src={i2} alt="picture" className="macbook"/></a></div>
-            <div className="imageborder"><a href="/iphone" className="macbook"><img src={i3} alt="picture" className="macbook"/></a></div>
-            <div className="imageborder"><a href="/iphone" className="macbook"><img src={i1} alt="picture" className="macbook"/></a></div>
+            <h1 className="storeheader2"><h2>iPhone</h2>Oh. So. Pro.<br></br>From $41.62/mo. for 24 mo. or $999 before trade‑in1<br></br>Plus get a $150 gift card.◊◊</h1>
+            <div className="imageborder"><a href="/mac"  className="macbook"><img src={i4} alt="picture" className="macbook"/></a></div>
             </div>
         
         </div>
         <h1 className="HeaderStore">IPad</h1>
         <a href="/ipad"><img src={ipad1} alt="picture" className="Ipad"/></a>
-    
         </div>
     );
 }

@@ -1,27 +1,64 @@
 .storeimages{
     display: flex;
-    margin-top: 50px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;   
+}
+.watchswich{
+    margin-top: 60px;
+    size: 500px;
+}
+.storeheader{
+    width: 40%;
+    color: gray;
+    text-align: start;
+    margin-top: 100px;
+
+    margin-right: auto;
+}
+.storeheader1{
+    width: 40%;
+    color: gray;
+    text-align: start;
+    margin-top: 100px;
+    margin-right: auto;
     margin-left: 200px;
-    margin-right: 200px;
+}
+.storeheader2{
+   
+    color: gray;
+    text-align: start;
+    margin-top: 100px;
+    margin-left: 200px;
     
+}
+.storeheader2 h2{
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    
+}
+.storeheader h2{
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    
+}
+.storeheader1 h2{
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
     
 }
 .macbook{
-    width: auto;
-    height: 150px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 20px;
+    width: 60%;
+    margin-left: 100px;
+    margin-right: 100px;
+   
     
       
 }
 .imageborder{
-    background-color: rgb(235, 231, 231);
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 40px;
-    padding-right: 40px;
-    border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
 }

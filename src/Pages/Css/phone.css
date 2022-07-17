@@ -1,0 +1,9 @@
+.iphonehead{
+    width: 70%;
+    border-radius: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.iphonintro{
+    display: flex;
+}
